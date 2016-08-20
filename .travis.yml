@@ -8,3 +8,4 @@ before_install:
 script:
   - open -b com.apple.iphonesimulator
   - xcodebuild clean build test -workspace Buttons.xcworkspace -scheme 'Buttons' -sdk iphonesimulator9.3 -destination 'platform=iOS Simulator,name=iPhone 6s Plus' | xcpretty -c  && exit ${PIPESTATUS[0]}
+cache: cocoapods
