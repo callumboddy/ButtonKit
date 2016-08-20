@@ -9,28 +9,24 @@
 import XCTest
 @testable import Buttons
 
-class ButtonsTests: XCTestCase {
+import Quick
+import Nimble
+
+class RoundedButtonSpec: QuickSpec {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+    override func spec() {
+        let button: UIButton = UIButton()
+        describe("rounding a button") {
+            it("has a default radius of 0") {
+                expect(button.layer.cornerRadius).to(equal(0))
+            }
+
+            context("when i round it") {
+                it("updates the value to its new radius") {
+                    button.roundCorners(2)
+                    expect(button.layer.cornerRadius).to(equal(2))
+                }
+            }
         }
     }
-    
 }

@@ -1,5 +1,6 @@
-# Podfile
+source 'https://github.com/CocoaPods/Specs.git'
 
+platform :ios, '8.0'
 use_frameworks!
 
 def testing_pods
@@ -7,6 +8,6 @@ def testing_pods
     pod 'Nimble'
 end
 
-target 'MyTests' do
+target 'ButtonsTests' do
     testing_pods
 end
