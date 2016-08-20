@@ -9,17 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var button: Button!
+    @IBOutlet weak var primaryButton: Button!
+    @IBOutlet weak var actionButton: Button!
+    @IBOutlet weak var highlightButton: Button!
+    @IBOutlet weak var cautionButton: Button!
+    @IBOutlet weak var royalButton: Button!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.primaryButton.primaryColour()
+        self.actionButton.actionColour()
+        self.highlightButton.highlightColour()
+        self.cautionButton.cautionColour()
+        self.royalButton.royalColour()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

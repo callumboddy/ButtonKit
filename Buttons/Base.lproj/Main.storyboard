@@ -16,11 +16,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2q-QV-eOE" customClass="Button" customModule="Buttons" customModuleProvider="target">
+                                <rect key="frame" x="24" y="44" width="552" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tVZ-q1-NML"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0S-rI-3bD" customClass="Button" customModule="Buttons" customModuleProvider="target">
+                                <rect key="frame" x="24" y="172" width="552" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RGf-Tl-Ghl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mh-wC-MfO" customClass="Button" customModule="Buttons" customModuleProvider="target">
+                                <rect key="frame" x="24" y="236" width="552" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="V9w-At-W6S"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoE-sk-yik" customClass="Button" customModule="Buttons" customModuleProvider="target">
+                                <rect key="frame" x="24" y="300" width="552" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LKO-s7-7u2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KP-ce-5Os" customClass="Button" customModule="Buttons" customModuleProvider="target">
+                                <rect key="frame" x="24" y="364" width="552" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vfh-Eu-LEo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVQ-NM-J96" customClass="Button" customModule="Buttons" customModuleProvider="target">
+                                <rect key="frame" x="24" y="108" width="552" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9eU-oa-xxh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YVQ-NM-J96" firstAttribute="trailing" secondItem="g2q-QV-eOE" secondAttribute="trailing" id="47V-MJ-Bu9"/>
+                            <constraint firstItem="xoE-sk-yik" firstAttribute="top" secondItem="3mh-wC-MfO" secondAttribute="bottom" constant="24" id="8s6-2k-E9d"/>
+                            <constraint firstItem="y0S-rI-3bD" firstAttribute="top" secondItem="YVQ-NM-J96" secondAttribute="bottom" constant="24" id="AUS-8X-V0P"/>
+                            <constraint firstItem="xoE-sk-yik" firstAttribute="trailing" secondItem="g2q-QV-eOE" secondAttribute="trailing" id="J9i-M6-LFl"/>
+                            <constraint firstItem="3mh-wC-MfO" firstAttribute="top" secondItem="y0S-rI-3bD" secondAttribute="bottom" constant="24" id="L8E-nU-Apk"/>
+                            <constraint firstItem="1KP-ce-5Os" firstAttribute="leading" secondItem="g2q-QV-eOE" secondAttribute="leading" id="O6h-eq-gcZ"/>
+                            <constraint firstItem="g2q-QV-eOE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="QdH-39-cHJ"/>
+                            <constraint firstItem="xoE-sk-yik" firstAttribute="leading" secondItem="g2q-QV-eOE" secondAttribute="leading" id="UMx-7m-w9D"/>
+                            <constraint firstItem="3mh-wC-MfO" firstAttribute="leading" secondItem="g2q-QV-eOE" secondAttribute="leading" id="Z3f-Ux-RFx"/>
+                            <constraint firstItem="g2q-QV-eOE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZvC-cX-oab"/>
+                            <constraint firstItem="g2q-QV-eOE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="bAJ-kx-Yji"/>
+                            <constraint firstItem="YVQ-NM-J96" firstAttribute="leading" secondItem="g2q-QV-eOE" secondAttribute="leading" id="bTg-iY-o4g"/>
+                            <constraint firstAttribute="trailing" secondItem="g2q-QV-eOE" secondAttribute="trailing" constant="24" id="c14-Md-Fe5"/>
+                            <constraint firstItem="1KP-ce-5Os" firstAttribute="trailing" secondItem="g2q-QV-eOE" secondAttribute="trailing" id="eIF-il-pHO"/>
+                            <constraint firstItem="y0S-rI-3bD" firstAttribute="leading" secondItem="g2q-QV-eOE" secondAttribute="leading" id="eaN-5W-gLo"/>
+                            <constraint firstItem="3mh-wC-MfO" firstAttribute="trailing" secondItem="g2q-QV-eOE" secondAttribute="trailing" id="hbD-Pu-CcP"/>
+                            <constraint firstItem="1KP-ce-5Os" firstAttribute="top" secondItem="xoE-sk-yik" secondAttribute="bottom" constant="24" id="i8F-Kb-dwU"/>
+                            <constraint firstItem="y0S-rI-3bD" firstAttribute="trailing" secondItem="g2q-QV-eOE" secondAttribute="trailing" id="xnP-2u-swD"/>
+                            <constraint firstItem="YVQ-NM-J96" firstAttribute="top" secondItem="g2q-QV-eOE" secondAttribute="bottom" constant="24" id="yJh-qy-m3B"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="actionButton" destination="y0S-rI-3bD" id="knG-mi-AEy"/>
+                        <outlet property="button" destination="g2q-QV-eOE" id="iBN-9a-QDC"/>
+                        <outlet property="cautionButton" destination="xoE-sk-yik" id="5Nd-Eg-j7t"/>
+                        <outlet property="highlightButton" destination="3mh-wC-MfO" id="EwI-dG-zmF"/>
+                        <outlet property="primaryButton" destination="YVQ-NM-J96" id="bHM-HB-oCX"/>
+                        <outlet property="royalButton" destination="1KP-ce-5Os" id="hCy-kE-kes"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="390" y="291"/>
         </scene>
     </scenes>
 </document>

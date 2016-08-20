@@ -6,16 +6,14 @@
 //  Copyright © 2016 Callum Boddy. All rights reserved.
 //
 
-import XCTest
 @testable import Buttons
-
+import XCTest
 import Quick
 import Nimble
 
 class RoundedButtonSpec: QuickSpec {
-    
     override func spec() {
-        let button: UIButton = UIButton()
+        let button: Button = Button()
         describe("rounding a button") {
             context("by default") {
                 it("has a  radius of 0") {
@@ -25,7 +23,7 @@ class RoundedButtonSpec: QuickSpec {
             
             context("when i add apply a corner radius") {
                 it("updates the value to its new radius") {
-                    button.roundCorners(2)
+                    button.cornerRadius(2)
                     expect(button.layer.cornerRadius).to(equal(2))
                     
                 }

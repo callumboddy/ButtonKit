@@ -1,5 +1,5 @@
 //
-//  Buttons_Extension.swift
+//  ButtonRadius.swift
 //  Buttons
 //
 //  Created by Callum Boddy on 20/08/2016.
@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-extension UIButton {
-    func roundCorners(round: CGFloat) {
-        layer.cornerRadius = round
+extension Button {
+    func cornerRadius(radius: CGFloat) {
+        layer.cornerRadius = radius
     }
 }
