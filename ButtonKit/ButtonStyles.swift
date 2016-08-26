@@ -21,7 +21,7 @@ struct ButtonBorder {
 }
 
 private extension UIButton {
-	func button_setBorder(color: UIColor) {
+    func button_setBorder(color: UIColor) {
         backgroundColor = UIColor.clearColor()
         layer.borderColor = color.CGColor
         layer.borderWidth = 3

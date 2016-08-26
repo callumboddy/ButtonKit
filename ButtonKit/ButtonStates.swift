@@ -24,7 +24,7 @@ private extension UIButton {
         let pressedStateColor = style == .Flat ? color.darkenColor() : borderColor
         let image = UIImage(color: pressedStateColor)
         setBackgroundImage(image, forState: .Highlighted)
-        setTitleColor(color.darkenColor(titleDimmingPercentage) , forState: .Highlighted)
+        setTitleColor(color.darkenColor(titleDimmingPercentage), forState: .Highlighted)
     }
 }
 

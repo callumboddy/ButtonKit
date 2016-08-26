@@ -16,7 +16,7 @@ struct ButtonTitle {
 }
 
 private extension UIButton {
-    
+
     func button_setTitleLabelColor(font: UIFont, color: UIColor, style: ButtonStyle) {
         titleLabel?.font = font
         if color.isColorBright() && style == .Flat {

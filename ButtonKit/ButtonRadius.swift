@@ -13,7 +13,7 @@ public enum ButtonRadius {
     case Square
     case Rounded
     case Pill
-    
+
     static func applyRadiusForButton(button: UIButton, radius: ButtonRadius) {
         switch radius {
         case .Square:
@@ -30,15 +30,15 @@ private extension UIButton {
     func cornerRadius(radius: CGFloat) {
         layer.cornerRadius = radius
     }
-    
+
     func square() {
         cornerRadius(0)
     }
-    
+
     func pillRadius() {
         cornerRadius(frame.height / 2)
     }
-    
+
     func rounded() {
         cornerRadius(4)
     }

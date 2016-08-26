@@ -11,7 +11,7 @@ import UIKit
 
 struct FontScheme {
     var font: UIFont
-    
+
     init(font: UIFont = UIFont.systemFontOfSize(UIFont.systemFontSize())) {
         self.font = font
     }

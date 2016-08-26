@@ -30,13 +30,13 @@ class ButtonStyler {
         ButtonState.applyPressedState(button, style: style)
         ButtonRadius.applyRadiusForButton(button, radius: radius)
         ButtonTitle.applyTitleStyle(button, font: instance.fontScheme.font, color: colorSchemeColor, style: style)
-        
+
     }
-    
+
     func effect(button: UIButton, effect: ButtonEffectStyle) {
-		ButtonEffect.applyEffectForEffectStyle(button, effect: effect)
+        ButtonEffect.applyEffectForEffectStyle(button, effect: effect)
     }
-    
+
     private func applyDefaults(button: UIButton) {
         button.adjustsImageWhenHighlighted = false
         button.adjustsImageWhenDisabled = false

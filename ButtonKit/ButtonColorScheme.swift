@@ -9,14 +9,12 @@
 import Foundation
 import UIKit
 
-
-let defaultColorValue = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.00)
-let primaryColorValue = UIColor(red:0.00, green:0.63, blue:0.80, alpha:1.00)
-let actionColorValue = UIColor(red:0.49, green:0.71, blue:0.00, alpha:1.00)
-let highlightColorValue = UIColor(red:0.95, green:0.55, blue:0.02, alpha:1.00)
-let cautionColorValue = UIColor(red:0.90, green:0.25, blue:0.16, alpha:1.00)
-let royalColorValue = UIColor(red:0.53, green:0.19, blue:0.55, alpha:1.00)
-
+let defaultColorValue = UIColor(red: 0.93, green: 0.93, blue: 0.93, alpha: 1.00)
+let primaryColorValue = UIColor(red: 0.00, green: 0.63, blue: 0.80, alpha: 1.00)
+let actionColorValue = UIColor(red: 0.49, green: 0.71, blue: 0.00, alpha: 1.00)
+let highlightColorValue = UIColor(red: 0.95, green: 0.55, blue: 0.02, alpha: 1.00)
+let cautionColorValue = UIColor(red: 0.90, green: 0.25, blue: 0.16, alpha: 1.00)
+let royalColorValue = UIColor(red: 0.53, green: 0.19, blue: 0.55, alpha: 1.00)
 
 /**
  the six colors present in the color scheme,
@@ -52,8 +50,8 @@ public struct ColorScheme {
      - returns: a ColorScheme with the custom color set up required
      */
     init(primaryColor: UIColor?, actionColor: UIColor?,
-         cautionColor: UIColor?, highlightColor: UIColor?,
-         royalColor: UIColor?, defaultColor: UIColor?) {
+        cautionColor: UIColor?, highlightColor: UIColor?,
+        royalColor: UIColor?, defaultColor: UIColor?) {
         if let primaryColor = primaryColor {
             self.primaryColor = primaryColor
         }
@@ -73,8 +71,8 @@ public struct ColorScheme {
             self.defaultColor = defaultColor
         }
     }
-    
-    init() { }
+
+    init() {}
 
     /**
      returns the UIColor associated to the ColorSchemeColor set in the ColorScheme intance

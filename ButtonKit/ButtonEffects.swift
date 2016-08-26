@@ -40,7 +40,7 @@ private extension UIButton {
         let layer = shadowLayer(color: color.darkenColor(30), offet: CGSize(width: 0.0, height: 4.0), opacity: 1, radius: 0)
         applyLayer(layer)
     }
-    
+
     func applyShadow() {
         let layer = shadowLayer(color: UIColor.blackColor(), offet: CGSize(width: 1.0, height: 1.0), opacity: 0.3, radius: 2)
         applyLayer(layer)
@@ -50,7 +50,7 @@ private extension UIButton {
         self.superview?.addSubview(layer)
         self.superview?.sendSubviewToBack(layer)
     }
-    
+
     private func shadowLayer(color color: UIColor, offet: CGSize, opacity: Float, radius: CGFloat) -> UIView {
         let shadowLayer = UIView(frame: self.frame)
         shadowLayer.backgroundColor = UIColor.clearColor()

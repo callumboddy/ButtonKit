@@ -59,10 +59,10 @@ class ButtonColorSchemeSpec: QuickSpec {
                 })
             })
         }
-        describe("a custom scheme") { 
+        describe("a custom scheme") {
             let colorScheme = ColorScheme(primaryColor: UIColor.greenColor(), actionColor: UIColor.blueColor(), cautionColor: UIColor.redColor(), highlightColor: UIColor.orangeColor(), royalColor: UIColor.purpleColor(), defaultColor: UIColor.blackColor())
-            context("overrides the default colors", closure: { 
-                it("has a custom primary color", closure: { 
+            context("overrides the default colors", closure: {
+                it("has a custom primary color", closure: {
                     let color = colorScheme.colorForButtonColor(.Primary)
                     expect(color).toNot(equal(primaryColorValue))
                     expect(color).to(equal(UIColor.greenColor()))
@@ -71,7 +71,7 @@ class ButtonColorSchemeSpec: QuickSpec {
         }
         describe("a color scheme") {
             let colorScheme = ColorScheme()
-            context("can fetch colors", closure: { 
+            context("can fetch colors", closure: {
                 let color = colorScheme.colorForButtonColor(.Primary)
                 expect(color.isKindOfClass(UIColor).boolValue).to(beTrue())
                 expect(color).to(equal(primaryColorValue))
