@@ -27,6 +27,7 @@ class ButtonStyler {
         if style == .Bordered {
             ButtonBorder.applyBorderStyle(button, color: colorSchemeColor)
         }
+        ButtonState.applyPressedState(button, style: style)
         ButtonRadius.applyRadiusForButton(button, radius: radius)
         ButtonTitle.applyTitleStyle(button, font: instance.fontScheme.font, color: colorSchemeColor, style: style)
         

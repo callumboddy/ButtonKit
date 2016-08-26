@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-enum ButtonEffectStyle {
+public enum ButtonEffectStyle {
     case ThreeDimentional
     case Shadow
     case Glow
 }
 
-struct ButtonEffect {
+public struct ButtonEffect {
     static func applyEffectForEffectStyle(button: UIButton, effect: ButtonEffectStyle) {
         switch effect {
         case .ThreeDimentional:

@@ -24,7 +24,7 @@ private extension UIButton {
 	func button_setBorder(color: UIColor) {
         backgroundColor = UIColor.clearColor()
         layer.borderColor = color.CGColor
-        layer.borderWidth = 2
+        layer.borderWidth = 3
         setTitleColor(color, forState: .Normal)
     }
 }

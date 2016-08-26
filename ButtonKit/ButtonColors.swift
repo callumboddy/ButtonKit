@@ -18,12 +18,10 @@ struct ButtonPainter {
 private extension UIButton {
     func button_setColor(color: UIColor) {
         backgroundColor = color
-        applyDefaultPressedState()
     }
 }
 
-
-extension UIColor {
+internal extension UIColor {
     func isColorBright() -> Bool {
         let saturation: CGFloat = saturationForColour()
         let brightness: CGFloat = brightnessForColour()
@@ -48,7 +46,7 @@ extension UIColor {
         return UIColor()
     }
     
-    private func brightnessForColour() -> CGFloat {
+    internal func brightnessForColour() -> CGFloat {
         var hue: CGFloat = 0, saturation: CGFloat = 0, brightness: CGFloat = 0, alpha: CGFloat = 0
         if getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha) {
             return brightness
@@ -57,7 +55,7 @@ extension UIColor {
         return 0
     }
     
-    private func saturationForColour() -> CGFloat {
+    internal func saturationForColour() -> CGFloat {
         var hue: CGFloat = 0, saturation: CGFloat = 0, brightness: CGFloat = 0, alpha: CGFloat = 0
         if getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha) {
             return saturation

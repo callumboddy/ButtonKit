@@ -9,7 +9,26 @@
 import Foundation
 import UIKit
 
-extension UIImage {
+let titleDimmingPercentage: CGFloat = 40
+
+struct ButtonState {
+    static func applyPressedState(button: UIButton, style: ButtonStyle) {
+        button.applyDefaultPressedState(style)
+    }
+}
+
+private extension UIButton {
+    func applyDefaultPressedState(style: ButtonStyle) {
+        guard let color = backgroundColor else { return }
+        let borderColor = layer.borderColor != nil ? UIColor(CGColor: layer.borderColor!) : UIColor.whiteColor()
+        let pressedStateColor = style == .Flat ? color.darkenColor() : borderColor
+        let image = UIImage(color: pressedStateColor)
+        setBackgroundImage(image, forState: .Highlighted)
+        setTitleColor(color.darkenColor(titleDimmingPercentage) , forState: .Highlighted)
+    }
+}
+
+private extension UIImage {
     convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
         let rect = CGRect(origin: .zero, size: size)
         UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
@@ -19,14 +38,5 @@ extension UIImage {
         UIGraphicsEndImageContext()
         guard let cgImage = image.CGImage else { return nil }
         self.init(CGImage: cgImage)
-    }
-}
-
-extension UIButton {
-    func applyDefaultPressedState() {
-        guard let color = backgroundColor else { return }
-        let image = UIImage(color: color.darkenColor())
-        setBackgroundImage(image, forState: .Highlighted)
-        setTitleColor(color.darkenColor(40) , forState: .Highlighted)
     }
 }
