@@ -13,9 +13,16 @@
 		C1009C9E1D6835B0006C3A6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1009C9C1D6835B0006C3A6E /* Main.storyboard */; };
 		C1009CA01D6835B0006C3A6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1009C9F1D6835B0006C3A6E /* Assets.xcassets */; };
 		C1009CA31D6835B0006C3A6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1009CA11D6835B0006C3A6E /* LaunchScreen.storyboard */; };
-		C1009CAE1D6835B0006C3A6E /* ButtonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1009CAD1D6835B0006C3A6E /* ButtonsTests.swift */; };
-		C1009CBB1D6835E1006C3A6E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1009CBA1D6835E1006C3A6E /* Buttons.swift */; };
-		C1009CBD1D683629006C3A6E /* Buttons_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1009CBC1D683629006C3A6E /* Buttons_Extension.swift */; };
+		C16214EF1D706345006CFE50 /* ButtonColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16214ED1D706345006CFE50 /* ButtonColorScheme.swift */; };
+		C16214F01D706345006CFE50 /* ButtonStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16214EE1D706345006CFE50 /* ButtonStyler.swift */; };
+		C16214F21D70643C006CFE50 /* ButtonColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16214F11D70643C006CFE50 /* ButtonColors.swift */; };
+		C16214F41D7064B1006CFE50 /* ButtonEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16214F31D7064B1006CFE50 /* ButtonEffects.swift */; };
+		C16214F61D7064CD006CFE50 /* ButtonFontScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16214F51D7064CD006CFE50 /* ButtonFontScheme.swift */; };
+		C16214F81D7064E0006CFE50 /* ButtonRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16214F71D7064E0006CFE50 /* ButtonRadius.swift */; };
+		C16214FA1D7064F1006CFE50 /* ButtonStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16214F91D7064F1006CFE50 /* ButtonStates.swift */; };
+		C16214FC1D706511006CFE50 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16214FB1D706511006CFE50 /* ButtonStyles.swift */; };
+		C16214FE1D706521006CFE50 /* ButtonTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16214FD1D706521006CFE50 /* ButtonTitles.swift */; };
+		C16215001D7065FB006CFE50 /* ButtonColorSchemeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16214FF1D7065FB006CFE50 /* ButtonColorSchemeSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +46,17 @@
 		C1009CA21D6835B0006C3A6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1009CA41D6835B0006C3A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1009CA91D6835B0006C3A6E /* ButtonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1009CAD1D6835B0006C3A6E /* ButtonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsTests.swift; sourceTree = "<group>"; };
 		C1009CAF1D6835B0006C3A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1009CBA1D6835E1006C3A6E /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
-		C1009CBC1D683629006C3A6E /* Buttons_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons_Extension.swift; sourceTree = "<group>"; };
+		C16214ED1D706345006CFE50 /* ButtonColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonColorScheme.swift; sourceTree = "<group>"; };
+		C16214EE1D706345006CFE50 /* ButtonStyler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyler.swift; sourceTree = "<group>"; };
+		C16214F11D70643C006CFE50 /* ButtonColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonColors.swift; sourceTree = "<group>"; };
+		C16214F31D7064B1006CFE50 /* ButtonEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonEffects.swift; sourceTree = "<group>"; };
+		C16214F51D7064CD006CFE50 /* ButtonFontScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonFontScheme.swift; sourceTree = "<group>"; };
+		C16214F71D7064E0006CFE50 /* ButtonRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonRadius.swift; sourceTree = "<group>"; };
+		C16214F91D7064F1006CFE50 /* ButtonStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStates.swift; sourceTree = "<group>"; };
+		C16214FB1D706511006CFE50 /* ButtonStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		C16214FD1D706521006CFE50 /* ButtonTitles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTitles.swift; sourceTree = "<group>"; };
+		C16214FF1D7065FB006CFE50 /* ButtonColorSchemeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonColorSchemeSpec.swift; sourceTree = "<group>"; };
 		F50D40BE93770126D68ADADB /* Pods_ButtonsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButtonsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,6 +99,7 @@
 		C1009C8C1D6835B0006C3A6E = {
 			isa = PBXGroup;
 			children = (
+				C16214EC1D706345006CFE50 /* ButtonKit */,
 				C1009C971D6835B0006C3A6E /* Buttons - Example */,
 				C1009CAC1D6835B0006C3A6E /* ButtonsTests */,
 				C1009C961D6835B0006C3A6E /* Products */,
@@ -105,7 +120,6 @@
 		C1009C971D6835B0006C3A6E /* Buttons - Example */ = {
 			isa = PBXGroup;
 			children = (
-				C1009CB81D6835C6006C3A6E /* Buttons */,
 				C1009C981D6835B0006C3A6E /* AppDelegate.swift */,
 				C1009C9A1D6835B0006C3A6E /* ViewController.swift */,
 				C1009C9C1D6835B0006C3A6E /* Main.storyboard */,
@@ -120,19 +134,26 @@
 		C1009CAC1D6835B0006C3A6E /* ButtonsTests */ = {
 			isa = PBXGroup;
 			children = (
-				C1009CAD1D6835B0006C3A6E /* ButtonsTests.swift */,
+				C16214FF1D7065FB006CFE50 /* ButtonColorSchemeSpec.swift */,
 				C1009CAF1D6835B0006C3A6E /* Info.plist */,
 			);
 			path = ButtonsTests;
 			sourceTree = "<group>";
 		};
-		C1009CB81D6835C6006C3A6E /* Buttons */ = {
+		C16214EC1D706345006CFE50 /* ButtonKit */ = {
 			isa = PBXGroup;
 			children = (
-				C1009CBA1D6835E1006C3A6E /* Buttons.swift */,
-				C1009CBC1D683629006C3A6E /* Buttons_Extension.swift */,
+				C16214ED1D706345006CFE50 /* ButtonColorScheme.swift */,
+				C16214EE1D706345006CFE50 /* ButtonStyler.swift */,
+				C16214F11D70643C006CFE50 /* ButtonColors.swift */,
+				C16214F31D7064B1006CFE50 /* ButtonEffects.swift */,
+				C16214F51D7064CD006CFE50 /* ButtonFontScheme.swift */,
+				C16214F71D7064E0006CFE50 /* ButtonRadius.swift */,
+				C16214F91D7064F1006CFE50 /* ButtonStates.swift */,
+				C16214FB1D706511006CFE50 /* ButtonStyles.swift */,
+				C16214FD1D706521006CFE50 /* ButtonTitles.swift */,
 			);
-			name = Buttons;
+			path = ButtonKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,9 +308,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1009CBB1D6835E1006C3A6E /* Buttons.swift in Sources */,
-				C1009CBD1D683629006C3A6E /* Buttons_Extension.swift in Sources */,
+				C16214FE1D706521006CFE50 /* ButtonTitles.swift in Sources */,
+				C16214F41D7064B1006CFE50 /* ButtonEffects.swift in Sources */,
+				C16214F81D7064E0006CFE50 /* ButtonRadius.swift in Sources */,
+				C16214EF1D706345006CFE50 /* ButtonColorScheme.swift in Sources */,
+				C16214FC1D706511006CFE50 /* ButtonStyles.swift in Sources */,
 				C1009C9B1D6835B0006C3A6E /* ViewController.swift in Sources */,
+				C16214F21D70643C006CFE50 /* ButtonColors.swift in Sources */,
+				C16214FA1D7064F1006CFE50 /* ButtonStates.swift in Sources */,
+				C16214F01D706345006CFE50 /* ButtonStyler.swift in Sources */,
+				C16214F61D7064CD006CFE50 /* ButtonFontScheme.swift in Sources */,
 				C1009C991D6835B0006C3A6E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1009CAE1D6835B0006C3A6E /* ButtonsTests.swift in Sources */,
+				C16215001D7065FB006CFE50 /* ButtonColorSchemeSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,10 +472,12 @@
 			baseConfigurationReference = A9708CF2869DE39DB64FA913 /* Pods-ButtonsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ButtonsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = callumboddy.ButtonsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Buttons.app/Buttons";
 			};
 			name = Debug;
@@ -457,6 +487,7 @@
 			baseConfigurationReference = 9AF0A7BF1BF5D471E2767FCE /* Pods-ButtonsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ButtonsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = callumboddy.ButtonsTests;
