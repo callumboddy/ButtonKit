@@ -30,7 +30,6 @@ class ButtonStyler {
         ButtonState.applyPressedState(button, style: style)
         ButtonRadius.applyRadiusForButton(button, radius: radius)
         ButtonTitle.applyTitleStyle(button, font: instance.fontScheme.font, color: colorSchemeColor, style: style)
-
     }
 
     func effect(button: UIButton, effect: ButtonEffectStyle) {

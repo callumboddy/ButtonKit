@@ -15,8 +15,14 @@ struct ButtonTitle {
     }
 }
 
-private extension UIButton {
+public extension UIButton {
+	func setIcon(icon: Ionicon) {
+        titleLabel?.font = UIFont.ioniconOfSize(30)
+        setTitle(String.ioniconWithName(icon), forState: .Normal)
+    }
+}
 
+private extension UIButton {
     func button_setTitleLabelColor(font: UIFont, color: UIColor, style: ButtonStyle) {
         titleLabel?.font = font
         if color.isColorBright() && style == .Flat {

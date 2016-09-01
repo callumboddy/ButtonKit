@@ -17,19 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygt-VW-4J6">
-                                <rect key="frame" x="355" y="275" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygt-VW-4J6">
+                                <rect key="frame" x="358" y="275" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2bL-Qg-npS"/>
                                     <constraint firstAttribute="width" constant="50" id="x9F-kq-iIU"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD4-zs-iDs">
-                                <rect key="frame" x="195" y="275" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="LJ4-I1-Xyj"/>
-                                    <constraint firstAttribute="width" constant="50" id="Rg6-72-dVO"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
@@ -41,13 +33,21 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD4-zs-iDs">
+                                <rect key="frame" x="275" y="190" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LJ4-I1-Xyj"/>
+                                    <constraint firstAttribute="width" constant="300" id="zaQ-w6-Jcq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GX5-hf-Ca8" firstAttribute="centerY" secondItem="WD4-zs-iDs" secondAttribute="centerY" id="0ck-QK-GyN"/>
+                            <constraint firstItem="Ygt-VW-4J6" firstAttribute="centerY" secondItem="GX5-hf-Ca8" secondAttribute="centerY" id="834-My-FiR"/>
                             <constraint firstItem="Ygt-VW-4J6" firstAttribute="leading" secondItem="GX5-hf-Ca8" secondAttribute="trailing" constant="30" id="8f6-Em-Yrn"/>
-                            <constraint firstItem="GX5-hf-Ca8" firstAttribute="leading" secondItem="WD4-zs-iDs" secondAttribute="trailing" constant="30" id="8wc-sU-yOR"/>
-                            <constraint firstItem="Ygt-VW-4J6" firstAttribute="centerY" secondItem="WD4-zs-iDs" secondAttribute="centerY" id="Z1p-tp-ddv"/>
+                            <constraint firstItem="GX5-hf-Ca8" firstAttribute="top" secondItem="WD4-zs-iDs" secondAttribute="bottom" constant="35" id="IBG-TQ-0I6"/>
+                            <constraint firstItem="WD4-zs-iDs" firstAttribute="centerX" secondItem="GX5-hf-Ca8" secondAttribute="centerX" id="Ong-PH-jnv"/>
                             <constraint firstItem="GX5-hf-Ca8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mLj-p8-dBE"/>
                             <constraint firstItem="GX5-hf-Ca8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zA0-Fp-QoJ"/>
                         </constraints>

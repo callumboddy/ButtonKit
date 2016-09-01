@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 public enum ButtonStyle {
+    case None
     case Flat
     case Bordered
 }

@@ -16,29 +16,35 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let colorScheme = ColorScheme(primaryColor: UIColor(red: 0.35, green: 0.68, blue: 0.93, alpha: 1.00), actionColor: nil, cautionColor: UIColor(red: 0.19, green: 0.31, blue: 0.65, alpha: 1.00), highlightColor: UIColor(red: 0.13, green: 0.12, blue: 0.12, alpha: 1.00), royalColor: nil, defaultColor: nil)
-
-        ButtonStyler.sharedInstance.colorScheme = colorScheme
-
-        twitterButton.style(.Primary, style: .Bordered, radius: .Rounded)
-        twitterButton.titleLabel?.font = UIFont.ioniconOfSize(30)
-        twitterButton.setTitle(String.ioniconWithName(.SocialTwitter), forState: .Normal)
-
-        facebookButton.style(.Caution, style: .Bordered, radius: .Rounded)
-        facebookButton.titleLabel?.font = UIFont.ioniconOfSize(30)
-        facebookButton.setTitle(String.ioniconWithName(.SocialFacebook), forState: .Normal)
-
-        githubButton.style(.Highlight, style: .Bordered, radius: .Rounded)
-        githubButton.titleLabel?.font = UIFont.ioniconOfSize(30)
-        githubButton.setTitle(String.ioniconWithName(.SocialGithub), forState: .Normal)
+        twitterButton.style(.Primary, style: .Flat, radius: .Rounded)
+        facebookButton.style(.Caution, style: .Flat, radius: .Rounded)
+        githubButton.style(.Highlight, style: .Flat, radius: .Rounded)
+        facebookButton.setIcon(.SocialFacebook)
+        githubButton.setIcon(.SocialGithub)
+        twitterButton.setIcon(.SocialTwitter)
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        //        ButtonStyler().effect(twitterButton, effect: .Glow)
-        //        ButtonStyler().effect(facebookButton, effect: .Glow)
-        //        ButtonStyler().effect(githubButton, effect: .Glow)
+            ButtonStyler().effect(twitterButton, effect: .ThreeDimentional)
+            ButtonStyler().effect(facebookButton, effect: .ThreeDimentional)
+            ButtonStyler().effect(githubButton, effect: .ThreeDimentional)
     }
 }
 
+/*
+ WIP: Icon + Title
+ 
+ let iconFont = UIFont.ioniconOfSize(24)
+ let titleFont = ButtonStyler.sharedInstance.fontScheme.font
+ let icon = String.ioniconWithName(.SocialTwitter)
+ let text = "Twitter"
+ let title = "\(icon) \(text)"
+ 
+ let attributedTitle = NSMutableAttributedString(string: title)
+	
+ attributedTitle.addAttribute(NSFontAttributeName, value: iconFont, range: NSMakeRange(0, 1))
+ attributedTitle.addAttribute(NSFontAttributeName, value: titleFont, range: NSMakeRange(1, 5))
+ twitterButton.setAttributedTitle(attributedTitle, forState: .Normal)
+ 
+ */
