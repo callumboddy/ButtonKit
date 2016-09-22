@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C148F24E1D93F1420003E987 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1EECA9E1D93EC120024BAA7 /* ionicons.ttf */; };
+		C19B95EA1D940D2600AF879D /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C19B95E91D940D2600AF879D /* ionicons.ttf */; };
 		C1EECA741D93EA180024BAA7 /* ButtonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C1EECA731D93EA180024BAA7 /* ButtonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1EECA7B1D93EA180024BAA7 /* ButtonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EECA701D93EA180024BAA7 /* ButtonKit.framework */; };
 		C1EECA801D93EA180024BAA7 /* ButtonKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EECA7F1D93EA180024BAA7 /* ButtonKitTests.swift */; };
@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C19B95E91D940D2600AF879D /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
 		C1EECA701D93EA180024BAA7 /* ButtonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ButtonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EECA731D93EA180024BAA7 /* ButtonKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonKit.h; sourceTree = "<group>"; };
 		C1EECA751D93EA180024BAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		C1EECA911D93EC030024BAA7 /* ButtonStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		C1EECA921D93EC030024BAA7 /* ButtonTitles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTitles.swift; sourceTree = "<group>"; };
 		C1EECA9C1D93EC0C0024BAA7 /* Ionicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ionicons.swift; sourceTree = "<group>"; };
-		C1EECA9E1D93EC120024BAA7 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +72,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C19B95E71D940D0B00AF879D /* Stylers */ = {
+			isa = PBXGroup;
+			children = (
+				C1EECA8A1D93EC030024BAA7 /* ButtonColorScheme.swift */,
+				C1EECA8B1D93EC030024BAA7 /* ButtonStyler.swift */,
+				C1EECA8C1D93EC030024BAA7 /* ButtonColors.swift */,
+				C1EECA8D1D93EC030024BAA7 /* ButtonEffects.swift */,
+				C1EECA8E1D93EC030024BAA7 /* ButtonFontScheme.swift */,
+				C1EECA8F1D93EC030024BAA7 /* ButtonRadius.swift */,
+				C1EECA901D93EC030024BAA7 /* ButtonStates.swift */,
+				C1EECA911D93EC030024BAA7 /* ButtonStyles.swift */,
+				C1EECA921D93EC030024BAA7 /* ButtonTitles.swift */,
+			);
+			name = Stylers;
+			sourceTree = "<group>";
+		};
+		C19B95E81D940D1800AF879D /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				C19B95E91D940D2600AF879D /* ionicons.ttf */,
+				C1EECA9C1D93EC0C0024BAA7 /* Ionicons.swift */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		C1EECA661D93EA180024BAA7 = {
 			isa = PBXGroup;
 			children = (
@@ -93,17 +118,8 @@
 		C1EECA721D93EA180024BAA7 /* ButtonKit */ = {
 			isa = PBXGroup;
 			children = (
-				C1EECA9E1D93EC120024BAA7 /* ionicons.ttf */,
-				C1EECA9C1D93EC0C0024BAA7 /* Ionicons.swift */,
-				C1EECA8A1D93EC030024BAA7 /* ButtonColorScheme.swift */,
-				C1EECA8B1D93EC030024BAA7 /* ButtonStyler.swift */,
-				C1EECA8C1D93EC030024BAA7 /* ButtonColors.swift */,
-				C1EECA8D1D93EC030024BAA7 /* ButtonEffects.swift */,
-				C1EECA8E1D93EC030024BAA7 /* ButtonFontScheme.swift */,
-				C1EECA8F1D93EC030024BAA7 /* ButtonRadius.swift */,
-				C1EECA901D93EC030024BAA7 /* ButtonStates.swift */,
-				C1EECA911D93EC030024BAA7 /* ButtonStyles.swift */,
-				C1EECA921D93EC030024BAA7 /* ButtonTitles.swift */,
+				C19B95E81D940D1800AF879D /* Icons */,
+				C19B95E71D940D0B00AF879D /* Stylers */,
 				C1EECA731D93EA180024BAA7 /* ButtonKit.h */,
 				C1EECA751D93EA180024BAA7 /* Info.plist */,
 			);
@@ -210,7 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C148F24E1D93F1420003E987 /* ionicons.ttf in Resources */,
+				C19B95EA1D940D2600AF879D /* ionicons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
