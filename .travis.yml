@@ -7,6 +7,6 @@ env:
 script:
     - set -o pipefail
     - xcodebuild -version
-    - xcodebuild -workspace Buttons.xcworkspace -scheme Buttons -configuration Debug -sdk iphonesimulator -destination "$DESTINATION" test -enableCodeCoverage YES | xcpretty -tc
+    - xcodebuild -project ButtonKit/ButtonKit.xcodeproj -scheme ButtonKit -configuration Debug -sdk iphonesimulator -destination "$DESTINATION" test -enableCodeCoverage YES | xcpretty -tc
 after_success:
   - bash <(curl -s https://codecov.io/bash) -J 'Buttons'
