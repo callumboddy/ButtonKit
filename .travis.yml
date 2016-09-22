@@ -5,4 +5,4 @@ script:
     - xcodebuild -version
     - xcodebuild test -project ButtonKit/ButtonKit.xcodeproj -scheme ButtonKit -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO || -enableCodeCoverage YES | xcpretty -tc
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -J 'Buttons'
+  - bash <(curl -s https://codecov.io/bash) -J 'ButtonKit'
